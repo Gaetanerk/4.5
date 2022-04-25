@@ -13,7 +13,15 @@
       <option value="femme">Femme</option>
     </select>
     <!-- <input type="text" id="sex" placeholder="Entrer votre sexe" /> -->
-    <input type="number" id="age" placeholder="Entrer votre âge" />
+    <!-- <input type="number" id="age" placeholder="Entrer votre âge" /> -->
+    <select name="age" id="age">
+      <option selected>Choisir un age</option>
+      <script>
+        for (let i = 1; i <= 100; i++) {
+          document.write('<option value="' + i + '">' + i + "</option>");
+        }
+      </script>
+    </select>
     <button id="checkBtn">Vérifier</button>
     <p id="result"></p>
     <script src="./assets/js/script.js" defer></script>
