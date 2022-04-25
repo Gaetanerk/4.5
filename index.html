@@ -7,9 +7,15 @@
     <title>exo 4.5</title>
   </head>
   <body>
-    <input type="text" id="sex" placeholder="Entrer votre sexe" />
+    <select name="sex" id="sex">
+      <option selected>Choisisser votre sexe</option>
+      <option value="homme">Homme</option>
+      <option value="femme">Femme</option>
+    </select>
+    <!-- <input type="text" id="sex" placeholder="Entrer votre sexe" /> -->
     <input type="number" id="age" placeholder="Entrer votre âge" />
     <button id="checkBtn">Vérifier</button>
-    <script src="./assets/js/script.js"></script>
+    <p id="result"></p>
+    <script src="./assets/js/script.js" defer></script>
   </body>
 </html>
